@@ -6,6 +6,7 @@ function SearchBar(props) {
 
   const handleOnchange = (e) => {
     setSearchText(e.target.value);
+    onSearch(searchText);
   };
 
   const handleOnClick = () => {
