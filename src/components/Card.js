@@ -6,13 +6,13 @@ function Card({ movie }) {
       <div class="h-48 overflow-visible w-3/2">
         <img
           class="rounded-3xl shadow-lg h-48"
-          src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1LRLLWGvs5sZdTzuMqLEahb88Pc.jpg"
-          alt=""
+          src={movie.thumbnail}
+          alt={movie.name}
         />
       </div>
       <div class="flex flex-col w-1/2">
         <div class="flex justify-between items-start">
-          <h2 class="text-xl font-bold">Sweet Tooth: El niño ciervo</h2>
+          <h2 class="text-l font-bold">{movie.name}</h2>
         </div>
         <div>
           <div class="text-sm text-gray-400">Year</div>
