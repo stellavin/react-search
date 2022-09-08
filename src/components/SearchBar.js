@@ -16,7 +16,7 @@ function SearchBar(props) {
 
   return (
     <>
-      <div>
+      <div data-testid="search">
         <label
           htmlFor="default-search"
           className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"

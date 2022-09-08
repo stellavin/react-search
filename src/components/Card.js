@@ -12,7 +12,11 @@ function Card({ movie }) {
         <div className="p-4">
           <h2 className="text-l font-bold">Genres</h2>
           {movie.genres.map((item, index) => (
-            <div className="text-sm text-gray-800">
+            <div
+              key={`genre-${index + 1}`}
+              className="text-sm text-gray-800"
+              data-testid={`genre-${index + 1}`}
+            >
               {index + 1}. {item}
             </div>
           ))}
