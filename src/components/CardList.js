@@ -10,7 +10,7 @@ function CardList({ results }) {
 
   console.log("results", results);
   return (
-    <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3">
+    <div className="grid grid-flow-row-dense grid-cols-3 grid-rows-3 ">
       {data.map((item) => (
         <Card movie={item} />
       ))}
